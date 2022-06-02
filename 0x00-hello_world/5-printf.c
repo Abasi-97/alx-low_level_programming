@@ -2,7 +2,7 @@
  * File: 5-printf.c
  * author: Joshua Adewale
  */
-#include	<stdio.h>
+#include<stdio.h>
 /**
  * main - prints "with proper grammar, but the outcome is a piece of art,
  * 		followed by a white space and a newline".
