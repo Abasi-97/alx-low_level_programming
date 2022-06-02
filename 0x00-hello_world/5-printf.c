@@ -4,13 +4,13 @@
  */
 #include <stdio.h>
 /**
- * main function will print "with proper grammar, but the outcome is a piece of art, 
- * 			     followed by a white space and a newline".
+ * main - prints "with proper grammar, but the outcome is a piece of art, 
+ *		 followed by a white space and a newline".
  *
  * Return: always 0.
  *
  */
-int main(void) 
+int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
