@@ -1,7 +1,3 @@
-/**
- * File: 4-puts.c
- * Auth: Joshua Adewale
- */
 #include<stdio.h>
 /**
  * main - Entry point
