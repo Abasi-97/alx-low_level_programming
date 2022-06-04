@@ -7,7 +7,8 @@
 int main(void)
 {
 	int numset1, numset2;
-	for (numset = 0 ; numset1 < 9 ; numset1++)
+
+	for (numset1 = 0 ; numset1 < 9 ; numset1++)
 	{
 		for (numset2 = numset1 + 1 ; numset2 < 10 ; numset2++)
 		{
@@ -17,7 +18,7 @@ int main(void)
 			if (numset1 == 8 && numset2 == 9)
 				continue;
 			putchar(',');
-			putchar('');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
