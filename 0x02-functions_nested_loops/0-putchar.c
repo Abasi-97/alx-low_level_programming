@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<main.h>
 /**
  * main - check the code
  *
@@ -8,5 +9,5 @@
 int main(void)
 {
 	printf("_putchar");
-	Return (0);
+	return (0);
 }
