@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * main - Entry point
+ * is_lower - Entry point
  *
  * Return - Always 0 (SUCCESS)
  */
