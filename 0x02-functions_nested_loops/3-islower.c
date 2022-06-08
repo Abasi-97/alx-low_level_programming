@@ -1,6 +1,7 @@
 #include"main.h"
 /**
  * is_lower - Entry point
+ * @c - character to check
  *
  * Return - Always 0 (SUCCESS)
  */
