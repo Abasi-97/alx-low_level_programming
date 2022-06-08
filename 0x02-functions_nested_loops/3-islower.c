@@ -6,12 +6,13 @@
  */
 int is_lower(int c)
 {
-	if (if c >= 'a' && c <= 'z')
+	if (c >= 'a' && c <= 'z')
 	{
-		return 1;
+		return (1);
 	}
 	else
 	{
-		return 0;
+		return (0);
 	}
+	_putchar('\n');
 }
