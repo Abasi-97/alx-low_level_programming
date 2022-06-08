@@ -4,11 +4,11 @@
  *
  * Return - Always 0 (SUCCESS)
  */
-int is_lower(int c)
+int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{
-		return (1);
+		returni (1);
 	}
 	else
 	{
