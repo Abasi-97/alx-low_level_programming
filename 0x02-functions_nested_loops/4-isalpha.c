@@ -1,8 +1,9 @@
 #include"main.h"
 /**
  * _isalpha - Entry point
+ * @c: character to check
  *
- * Return - 1 if lower or upper, 0 if nit alphabet
+ * Return - 1 if lower or upper, 0 if nit alphabet character
  */
 int _isalpha(int c)
 {

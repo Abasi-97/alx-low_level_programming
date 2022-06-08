@@ -1,6 +1,7 @@
 #include"main.h"
 /**
- * jack_bauer - Entry point
+ * jack_bauer - print every minute of a day
+ * Description: print minutes 00:00 to 23:59
  *
  * Return - Always 0 (SUCCESS)
  */
@@ -24,4 +25,4 @@ void jack_bauer(void)
 		min = 0;
 		hours++;
 	}
-}
+i}

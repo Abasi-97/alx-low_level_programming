@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * times_table - Entry point
+ * times_table - print multiplication table
  *
  * Return - Always 0 (SUCCESS)
  */
