@@ -1,23 +1,18 @@
 #include "main.h"
 /**
- * more_numbers - prints 10 times the numbers
+ * print_line -draws a straight line in the terminal
+ * @n: the number of times that the special character must be printed
  *
- * Return: a serie of number 10 times
+ * Return: a straight line
  */
-void more_numbers(void)
+void print_line(int n)
 {
-	int a, b;
+	int a = 1;
 
-	for (a = 0 ; a <= 9 ; a++)
+	while (a <= n)
 	{
-		for (b = 0 ; b <= 14 ; b++)
-		{
-			if (b >= 10)
-			{
-				_putchar(b / 10 + '0');
-			}
-			_putchar(b % 10 + '0');
-		}
-		_putchar('\n');
+		_putchar(95);
+		a++;
 	}
+	_putchar('\n');
 }
