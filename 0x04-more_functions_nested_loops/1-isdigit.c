@@ -1,7 +1,8 @@
-#include"main.h"
+#include "main.h"
+
 /**
  * _isdigit - checks for a digit
- * @c - the parameter to print
+ * @c: the parameter to print
  *
  * Return: 1 or 0
  */
