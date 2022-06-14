@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include"main"
+
 /**
  * print_array - print n of int array
  * @a: pointer
