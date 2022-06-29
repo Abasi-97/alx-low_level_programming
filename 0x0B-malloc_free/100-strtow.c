@@ -1,86 +1,53 @@
+#include "main.h"
 #include <stdlib.h>
 
 /**
- * strtow - char
- * @str: pointer to string params
- * Return: char
+ * argstostr - concatenates all the arguments of a program.
+ * @ac: argument count.
+ * @av: argument vector.
+ *
+ * Return: pointer of an array of char
  */
-
-char **strtow(char *str)
+char *argstostr(int ac, char **av)
 {
-	int i = 0, j = 0, k = 0;
-	int len = 0, count = 0;
-	char **f, *col;
+	char *aout;
+	int c, i, j, ia;
 
-	if (!str || !*str)
+	if (ac == 0)
 	{
 		return (NULL);
 	}
-
-	while (*(str + i))
+	for (c = i = 0; i < ac; i++)
 	{
-		if (*(str + i) != ' ')
-		{
-			if (*(str + i + 1) == ' ' || *(str + i + 1) == 0)
-			{
-				count += 1;
-			}
-		}
-		i++;
-	}
-
-	if (count == 0)
-	{
-		return (NULL);
-	}
-	count += 1;
-	f = malloc(sizeof(char *) * count);
-
-	if (!f)
-	{
-		return (NULL);
-	}
-	i = 0;
-
-	while (*str)
-	{
-		while (*str == ' ' && *str)
-		{
-			str++;
-		}
-		len = 0;
-
-		while (*(str + len) != ' ' && *(str + len))
-		{
-			len += 1;
-		}
-		len += 1;
-		col = malloc(sizeof(char) * len);
-
-		if (!col)
-		{
-			for (k = j - 1; k >= 0; k--)
-			{
-				free(f[k]);
-			}
-			free(f);
+		if (av[i] == NULL)
 			return (NULL);
-		}
 
-		for (k = 0; k < (len - 1);  k++)
-		{
-			*(col + k) = *(str++);
-		}
-		*(col + k) = '\0';
-		*(f + j) = col;
-
-		if (j < (count - 1))
-		{
-			j++;
-		}
+		for (j = 0; av[i][j] != '\0'; j++)
+			c++;
+		c++;
 	}
-	*(f + j) = NULL;
-	return (f);
-} /*yes*/
 
+	aout = malloc((c + 1) * sizeof(char));
 
+	if (aout == NULL)
+	{
+		free(aout);
+		return (NULL);
+	}
+
+	for (i = j = ia = 0; ia < c; j++, ia++)
+	{
+		if (av[i][j] == '\0')
+		{
+			aout[ia] = '\n';
+			i++;
+			ia++;
+			j = 0;
+		}
+		if (ia < c - 1)
+			aout[ia] = av[i][j];
+	}
+	aout[ia] = '\0';
+
+	return (aout);
+}
